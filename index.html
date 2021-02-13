@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Document</title>
@@ -11,48 +13,97 @@
 <body>
     <main>
         <header>
-            <h1>Benjamin Harris</h1>
-            <img src="./assets/images/profile pic.jpg" alt="Benjamin Harris">
-            <h3>About Me:</h3>
-            <p id="aboutMe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus saepe praesentium ea officiis cumque beatae maiores suscipit minima! Voluptatum est explicabo inventore perspiciatis assumenda in officiis sequi dolore ratione. Blanditiis.</p>
+            
             <nav>
+                <h1>Benjamin Harris</h1>
                 <ul>
-                    <li><a href="">Project 1</a></li>
-                    <li><a href="">Project 2</a></li>
-                    <li><a href="">Project 3</a></li>
-                    <li><a href="">Contact Info</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#card1">Work</a></li>
+                    <li><a href="#contact">Contact Info</a></li>
+                    <li><a href="">Resume</a></li>
                 </ul>
             </nav>
+
+            <!-- mobile -->
+            <h3>About Me:</h3>
+            <p id="aboutMe">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus saepe praesentium ea officiis cumque beatae maiores suscipit minima! Voluptatum est explicabo inventore perspiciatis assumenda in officiis sequi dolore ratione. Blanditiis. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis est, quod facere dicta, esse et doloremque fugiat ab quia libero unde modi alias voluptates quisquam ratione tempore assumenda tempora totam!<br><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus saepe praesentium ea officiis cumque beatae maiores suscipit minima!Voluptatum est explicabo inventore perspiciatis assumenda in officiis sequi dolore ratione. Blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae modi consectetur ipsa eos corporis veniam laborum minima ratione numquam adipisci nisi beatae commodi, facere repudiandae inventore itaque. Est, maiores!</p> 
+            
+            <h2>Cool Subtitle!</h2>
         </header>
-        <div id="midContent">
-            <aside class="side" id="sideBar">
-                <h3>About Me</h3>
-                <h3>Work</h3>
-                <h3>Contact Information</h3>
+
+                    <!-- fullscreen -->
+        <div class="sideContent left" id="about">
+            <h3 class="left">About<br>Me</h3>
+            <p class="right" id="aboutMeLg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus saepe praesentium ea officiis cumque beatae maiores suscipit minima!Voluptatum est explicabo inventore perspiciatis assumenda in officiis sequi dolore ratione. Blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae modi consectetur ipsa eos corporis veniam laborum minima ratione numquam adipisci nisi beatae commodi, facere repudiandae inventore itaque. Est, maiores!<br><br><br>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus saepe praesentium ea officiis cumque beatae maiores suscipit minima!Voluptatum est explicabo inventore perspiciatis assumenda in officiis sequi dolore ratione. Blanditiis Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab recusandae modi consectetur ipsa eos corporis veniam laborum minima ratione numquam adipisci nisi beatae commodi, facere repudiandae inventore itaque. Est, maiores!</p>
+        </div>  
+
+        
+        <div id="midContent"> 
+
+            <aside class="side left" id="sideBar">
+                    <h3>Work</h3>
             </aside>
-            <div id="cardContainer">
-                <p id="aboutMeLg">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus saepe praesentium ea officiis cumque beatae maiores suscipit minima! Voluptatum est explicabo inventore perspiciatis assumenda in officiis sequi dolore ratione. Blanditiis.</p>
-
-                <section class="cardStack" id="card1">
-                    <!-- <figure class="imageContainer" id="image1">
-                        <img src="./assets/images/tesla-console.jpg" alt="program running on Telsa's console screen.">
-                    </figure> -->
-                    <div class="cardHeader"><h3>Project 1</h3></div>
-                    <div class="card">
-                        <p class="cardContent">blah blah</p>
-                    </div>
-                </section>
-                <div id="cardContainerSm">
-
+            
+            <div class="right" id="cardContainer">
+            
+                <div class="cardColumn" id="card1">
+                    <section class="cardStack">
+                        <div class="cardHeader">
+                            <h3>merf's report</h3>
+                            <p>Burn Stack</p>
+                        </div>
+                    </section>
                 </div>
-                <footer>
-                        <p>Email: <a href="mailto:johndoe@website.com">johndoe@website.com</a>
-                        Linkedin: <a href="https://www.linkedin.com">John Doe</a>
-                        Github: <a href="">John_Doe</a>
-                        Telephone: <a href="tel:5555555">(555) 555-5555</a></p>
-                </footer>
+
+                <div class="cardColumn cardSm" id="card2">
+                    <section class="cardStack" >
+                        <div class="cardHeader">
+                            <h3>MUD Wall</h3>
+                            <p>Toad/;o</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="cardSm cardColumn" id="card3">
+                    <section class="cardStack">
+                        <div class="cardHeader">
+                            <h3>Palculator</h3>
+                            <p>c-pap/seass/coffeeLines</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="cardSm cardColumn" id="card4">
+                    <section class="cardStack">
+                        <div class="cardHeader">
+                            <h3>Pastoral Puzzle</h3>
+                            <p>(feel the)Bern stack</p>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="cardSm cardColumn" id="card5">
+                    <section class="cardStack">
+                        <div class="cardHeader">
+                            <h3>None Buddy</h3>
+                            <p>hatchTml/see?ss</p>
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
+            <footer>
+                <div class="sideContent left" id="contact">
+                    <h3>Contact<br>Me</h3>
+                </div>
+
+                <div class="right" id="contactInfo">
+                    <a href="mailto:johndoe@website.com">johndoe@website.com</a>
+                    <a href="https://www.linkedin.com">John Doe</a>
+                    <a href="github.com/john_doe">@John_Doe</a>
+                    <a href="tel:5555555">(555) 555-5555</a></p>
+                </div>
+        </footer>
     </main>
 </body>
 </html>
